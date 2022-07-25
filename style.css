@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Open+Sans:wght@300;400;700&family=Syne+Tactile&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Nunito';
+    font-size: 20px;
+}
+section{
+    
+    min-height: 70vh;
+    width: 100%;
+    background-color: rgb(25, 25, 26);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-color: rgb(40, 40, 44);
+    padding: 50px 30px 30px 30px;
+    width:90%;
+    max-width: 100%;
+    min-height: 500px;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+.container .scoreBoard{
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    margin: -15px;
+}
+form h1 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+form .option{
+    font-size: 1.2rem;
+    margin: 10px 0 0 10px;
+    padding: 10px;
+    transition: .3s ease background-color;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+}
+form .option label{
+    width: 100%;
+    margin-left: 10px;
+    cursor: pointer;
+    justify-self: stretch;
+}
+form .option:hover{
+    background-color: rgb(23, 23, 24);
+}
+form .option input[type="radio"]:checked + label{
+    color: rgb(0, 238, 255);
+}
+form button, .container .result-overlay button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-family: 'Nunito';
+    background-color: rgb(98, 100, 105);
+    border: none;
+    outline: none;
+    color: rgb(20, 20, 20);
+    cursor: pointer;
+    transition: .3s ease background-color;
+}
+button:hover,
+.container .result-overlay button:hover{
+    background-color: rgb(145, 148, 155);
+}
+form .option.correct{
+    background-color: green;
+}
+
+.finish-btn, .next-btn, .prev-btn {
+    width: 33%;
+    display: inline-block;
+}
+
+.prev-btn, .finish-btn{
+    border-right: 1px solid black;
+}
+
+.next-btn, .finish-btn{
+    border-left: 1px solid black;
+}
+
+.container .result-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(40, 40, 44);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .result-overlay .final-result{
+    font-size: 5rem;
+}
+
+.container .placeholder{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./placeholder.png);
+    background-color: rgb(40, 40, 44);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+}
+.success{
+    color: green;
+}
+.fail{
+    color: red;
+}
+.timer{
+    position: absolute; 
+    top: 0;
+    left: -160px;
+    
+}
+.myName{
+    position: absolute;
+    top: 0;
+    right: 600px;
+}
+
+
+.hide{
+    display: none;
+}
+.container0{
+    position: relative;
+    background-color: rgb(40, 40, 44);
+    padding: 50px 30px 30px 30px;
+    width:100%;
+    max-width: 100%;
+    min-height: 150px;
+    /* border-radius: 5px; */
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+.container0 #sel{
+    position: absolute;
+    left: 700px;
+    top: 70px;
+    height: 35px;
+    width: 200px;
+    background-color: black;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 16px;
+    margin: -30px;
+    
+}
+.container0 #bttn{
+    position: absolute;
+    left: 660px;
+    top: 90px;
+    width: 205px;
+    height: 40px;
+    margin: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+#note{
+    
+    position: absolute;
+    top: 20px;
+    left: 1100px;
+}
+#saved{
+    position: absolute;
+    left: -220%;
+}

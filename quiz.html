@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App</title>
+</head>
+
+<body>
+    <div class="container0">
+        <h2>IT - Exam</h2>
+        <span>Student Name : </span>
+        <label for="sel"></label>
+        <span id="nm"></span>
+        <select name="" id="sel">
+            <option value="Names"> Khaled Ahmed </option>
+        </select>
+        <br>
+        <button id="bttn">Start</button>
+        <p id="note">Notes :
+            <br>1 - The Right Answer Appeared in Console
+            <br>2 - Last Grade Appears in next round close console to see it
+        </p>
+    </div>
+
+    <section class="hide">
+        <div class="container">
+            <!-- start score -->
+            <div class="scoreBoard">
+                <span>Duration : </span>
+                <span id="timer">00:00</span>
+                <span class="myName"> Khaled.Ahmed </span>
+                <span id="saved"></span>
+                <span>&#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 Score : </span>
+                <span class="score-num">0</span> |
+                <span class="answered-num">0</span>
+            </div>
+            <!-- end score -->
+
+            <form id="quiz_form">
+                <h1>Q: <span class="qus">This is the question ?</span></h1>
+                <div class="all_options">
+
+                    <div class="option">
+                        <input type="radio" id="option1" value="1" name="quiz">
+                        <label for="option1">this is option1</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" id="option2" value="1" name="quiz">
+                        <label for="option2">this is option2</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" id="option3" value="1" name="quiz">
+                        <label for="option3">this is option3</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" id="option4" value="1" name="quiz">
+                        <label for="option4">this is option4</label>
+                    </div>
+
+
+                </div>
+
+                <div class="buttons">
+                    <button type="submit">Submit</button>
+                </div>
+
+            </form>
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
